@@ -10,8 +10,8 @@ h1, h2, h3, h4, h5, h6{
 #hp-header{
 	background-image: url("../images/tenets_01.jpg");
 	background-size: cover;
+	background-color: #181818;
 	height: 600px;
-	background-color: black;
 	overflow: auto;
 	position: relative;
 }
@@ -28,5 +28,23 @@ h1{
 	font-size: 6em;
 }
 #hp-sec-1{
-	background-color: black;
+	background-color: #181818;
+}
+
+.iframe-container{
+	width: 86%;
+	padding: 100px 7%;
+
+}
+.iframe-aspect{
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+#hp-sec-1 iframe{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+
 }
