@@ -34,7 +34,7 @@ home page
 
 h1{
 	color: var(--font-color);
-	line-height:0.2em;
+	line-height: 1;
 	font-size: 6em;
 }
 #hp-sec-1{
@@ -42,8 +42,8 @@ h1{
 }
 
 .iframe-container{
-	width: 86%;
-	padding: 100px 7%;
+	width: 80%;
+	padding: 100px 10%;
 	padding-bottom: 200px;
 
 }
@@ -115,7 +115,7 @@ music
 */
 #m-header{
 	background-color: var(--back-color);
-	padding: 100px 50px;
+	padding: 100px 100px;
 	padding-right: 10%;
 }
 h2{
@@ -185,7 +185,7 @@ art
 */
 #a-header{
 	background-color: var(--back-color);
-	padding: 100px 50px;
+	padding: 100px 100px;
 	padding-right: 10%;
 }
 #a-sec-1{
@@ -230,4 +230,33 @@ art
 }
 .a-flex-text-2{
 	width: 600px;
+}
+
+#a-sec-2{
+	background-color: var(--back-color);
+	padding: 100px 0;
+}
+.a-sec-2-container{
+	width: 80%;
+	margin: 0 auto;
+}
+#a-sec-2 a{
+	text-decoration: none;
+}
+.a-sec-2-inner{
+	position: relative;
+	width: 100%;
+}
+.a-sec-2-inner div{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: -3em;
+}
+.a-sec-2-inner img{
+	width: 100%;
+}
+.a-sec-2-inner h1{
+	margin: 0;
 }
