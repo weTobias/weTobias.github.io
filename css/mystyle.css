@@ -1,6 +1,8 @@
 :root{
 	--back-color: #252422;
 	--font-color: #FAFAFA;
+	--font-color-2: #050505;
+	--box-back: #FFFCF2;
 }
 body{
 	font-family: "Georgia", Sans-Serif;
@@ -75,7 +77,7 @@ h3{
 	font-size: 4em;	
 	margin-bottom: 20px;
 	margin-top: 0px;
-	color: #050505 ;
+	color: var(--font-color-2);
 }
 #hp-sec-3{
 	background-color: var(--back-color);
@@ -90,7 +92,7 @@ h3{
 .more-container{
 	text-align: center;
 	width: 45%;
-	background-color: #FFFCF2; 
+	background-color: var(--box-back); 
 }
 .more-container img{
 	width: 25%;
@@ -102,4 +104,72 @@ h3{
 }
 .more-inner{
 	padding-top: 70px;
+}
+
+
+#m-header{
+	background-color: var(--back-color);
+	padding: 100px 50px;
+	padding-right: 10%;
+}
+h2{
+	color: var(--font-color);
+	font-size: 4em;
+}
+#m-sec-1{
+	background-color: var(--back-color);
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.worlds-title{
+	text-align: center;
+}
+h4{
+	color: var(--font-color);
+	font-size: 3em;
+}
+#m-sec-1 table{
+	margin: 0 auto;
+	border-spacing: 1px;
+}
+#m-sec-1 td{
+	background-color: var(--box-back);
+	padding: 15px;
+	font-size: 1.5em;
+	color: var(--font-color-2);
+}
+#m-sec-1 a{
+	color: var(--font-color-2);
+}
+#m-sec-2{
+	background-color: var(--back-color);
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+#m-sec-2 .flexbox{
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+.others-container{
+	text-align: center;
+	width: 550px;
+	background-color: var(--box-back); 
+	margin: 10px;
+}
+.others-container img{
+	width: 25%;
+}
+.others-container a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.others-inner{
+	padding-top: 70px;
+}
+.others-title{
+	text-align: center;
 }
