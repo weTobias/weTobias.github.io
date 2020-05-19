@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6{
 	font-family: "Verdana", Serif;
 	font-weight: bold;
 }
+
+/*
+home page
+*/ 
 #hp-header{
 	background-image: url("../images/tenets_01.jpg");
 	background-size: cover;
@@ -106,7 +110,9 @@ h3{
 	padding-top: 70px;
 }
 
-
+/*
+music
+*/
 #m-header{
 	background-color: var(--back-color);
 	padding: 100px 50px;
@@ -134,7 +140,7 @@ h4{
 }
 #m-sec-1 td{
 	background-color: var(--box-back);
-	padding: 15px;
+	padding: 20px;
 	font-size: 1.5em;
 	color: var(--font-color-2);
 }
@@ -172,4 +178,56 @@ h4{
 }
 .others-title{
 	text-align: center;
+}
+
+/*
+art
+*/
+#a-header{
+	background-color: var(--back-color);
+	padding: 100px 50px;
+	padding-right: 10%;
+}
+#a-sec-1{
+	background-color: var(--back-color);
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.a-sec-1-container{
+	width: 70%;
+	margin: 0 auto;
+}
+#a-sec-1 .flexbox-1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#a-sec-1 .flexbox-2{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: -80px;
+}
+#a-sec-1 .flexbox-1 img{
+	width: 900px;
+}
+#a-sec-1 .flexbox-2 img{
+	width: 600px;
+}
+#a-sec-1 .flexbox-1 p{
+	font-size: 2em;
+	color: var(--font-color);
+}
+#a-sec-1 .flexbox-2 p{
+	font-size: 2em;
+	color: var(--font-color);
+}
+.a-flex-text-1{
+	width: 300px;
+
+}
+.a-flex-text-2{
+	width: 600px;
 }
