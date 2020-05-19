@@ -36,6 +36,7 @@ h1{
 	color: var(--font-color);
 	line-height: 1;
 	font-size: 6em;
+	margin: 0;
 }
 #hp-sec-1{
 	background-color: var(--back-color) ;
@@ -257,6 +258,12 @@ art
 .a-sec-2-inner img{
 	width: 100%;
 }
-.a-sec-2-inner h1{
-	margin: 0;
+
+
+.back-button{
+	width: 100px;
+}
+.back-container img{
+	transform: rotate(180deg);
+	fill: white;
 }
