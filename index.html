@@ -1,54 +1,63 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="./mystyle.css">
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="./media/icon.png">
-	<title>LoL</title>
-</head>
-<body>
-	<main>
-		<header id="hp-header">
-			<div class="hp-title-container">
-				<h1>LEAGUE OF</h1>
-				<h1>LEGENDS</h1>
-			</div>
-		</header>
-		<section id="hp-sec-1">
-			<div class="iframe-container">
-				<div class="iframe-aspect">
-					<iframe src="https://www.youtube.com/embed/aR-KAldshAE" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</section>
-		<section id="hp-sec-2">
-			<div class="flexbox">
-				<img src="./media/voli.png" class="flex-item" alt="Image of Volibear classic skin">
-				<p class="flex-item">League of Legends, or LoL, is a free to play MOBA game from Riot Games, that is available for Windows and macOS.
-				 With its 10 years of age, it is one of the biggest eSports titles with millions of regular viewers and one of the biggest videogames in general.
-				 The main goal of the game is to destroy the enemy nexus in a 5v5 arena, each player playing one of the ove 140 champions, with each having different abilitys and items to buy. The main map, beeing "Summoners Rift", is composed of 3 "lanes" a jungle and many othe things. LoL is a highly mechanical and strategical game where you always have room to improve and new things to learn. The huge playerbase won't make it easy for you.</p>
-			 </div>
-		</section>
-		<section id="hp-sec-3">
-			<div class="flexbox">
-				<div class="more-container">
-					<a href="./music.html">
-						<div class="more-inner">
-							<h3>MUSIC</h3>
-							<img src="./media/arrow.svg" alt="Arrow icon">
-						</div>
-					</a>
-				</div>
-				<div class="more-container">
-					<a href="./art.html">
-						<div class="more-inner">
-							<h3>ART</h3>
-							<img src="./media/arrow.svg" alt="Arrow icon">
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
-	</main>
-</body>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Lab 04 PWA</title>
+
+    <!-- Manifest and Styles -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- App Name -->
+    <meta name="application-name" content="Lab 04 PWA" />
+    <meta name="apple-mobile-web-app-title" content="Lab 04 PWA" />
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="/index.html" />
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="white"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
+
+    <!-- Splash Screens for iOS -->
+    <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+
+  </head>
+
+  <body class="fullscreen">
+    <div class="container">
+      <h1 class="title">Welcome to Lab 04 PWA!</h1>
+
+      <!-- Web Worker  -->
+      <h2>Web Worker</h2>
+      <button onclick="sendMessageToWebworker()">Post message 'hello'.</button>
+      <button onclick="askWebworkerForRecurringTask()">Post message 'recurring task'.</button>
+      <output class="webworker"></output>
+
+      <!-- Service Worker -->
+      <h2>Service Worker</h2>
+      <output class="serviceworker"></output>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/use_webworker.js"></script>
+    <script src="js/use_serviceworker.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
 </html>
